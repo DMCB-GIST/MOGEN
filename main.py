@@ -53,7 +53,7 @@ if dataset == 'GDSC':
     Methylation_file = './data/GDSC/GDSC_methylation_987cell.csv'
     Drug_info_file = './data/GDSC/GDSC_drug_information.csv'
     Drug_feature_file = './data/GDSC/drug_graph_feat'
-    cancer_response_exp_file = './data/GDSC/GDSCdata/GDSC2_ic50.csv'
+    cancer_response_exp_file = './data/GDSC/GDSC2_ic50.csv'
 
     drugid2pubchemid, drug_pubchem_id_set, gexpr_feature,methyl_feature, _, experiment_data \
                                                     = get_drug_cell_info(Drug_info_file,Drug_feature_file,
