@@ -78,7 +78,7 @@ if dataset == 'GDSC':
 else: 
     if dataset == 'CCLE':
         nb_epoch = 200
-        gexpr_feature = pd.read_csv("./data/CCLE/ccle_gexpr_promoter.csv",index_col = 0)
+        gexpr_feature = pd.read_csv("./data/CCLE/ccle_gexpr.csv",index_col = 0)
         methyl_feature = pd.read_csv("./data/CCLE/ccle_methylation.csv",index_col=0)
         gexpr_feature = gexpr_feature.T
         methyl_feature=methyl_feature.T
