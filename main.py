@@ -14,7 +14,7 @@ from sklearn.metrics import r2_score, roc_auc_score, mean_squared_error
 cuda_condition = torch.cuda.is_available()
 device = torch.device("cuda:0" if cuda_condition else "cpu")
 
-gene_vocab = pd.read_csv('./data/ccle_gene_vocabulary.csv',sep=',')
+gene_vocab = pd.read_csv('./data/CCLE/ccle_gene_vocabulary.csv',sep=',')
 vocab_size = gene_vocab.shape[0]
 tokenizer = Tokenizer(gene_vocab,shuf =True)
 
