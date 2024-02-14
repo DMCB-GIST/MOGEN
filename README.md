@@ -3,9 +3,9 @@ Multi-omics Gene Embedding based feedforward Neural networks
 
 ![figure1](https://github.com/DMCB-GIST/MOGEN/assets/104506641/e8eb0a47-b394-4042-a79c-a2354802112f)
 
-(a) Feature selection : Select individual gene sets by considering the variance of each sample (top) and the negative correlation of features across omics data (bottom).
-(b,c) Attention encoder module : In (b), the omics data is concatenated and used as input to the Attention Encoder, and in (c), each omics data and the concatenated data are put independently. 
-(d) Workflow of the study. 
+(a) Feature selection : Select individual gene sets by considering the variance of each sample (top) and the negative correlation of features across omics data (bottom).  
+(b,c) Attention encoder module : In (b), the omics data is concatenated and used as input to the Attention Encoder, and in (c), each omics data and the concatenated data are put independently.  
+(d) Workflow of the study.  
 
 
 ### Datasets
