@@ -166,10 +166,10 @@ for fold, (train2_index,test2_index) in enumerate(kfold.split(input_df_gexpr)):
     gnn = GNN_drug(layer_drug = layer_drug, dim_drug = dim_drug, do = gnn_dropout)
 
     cell_encoder = Transformer_Encoder(genes = nGenes, x_dim= embed_size, y_dim = att_dim, 
-                                        dropout = att_dropout, encoder = C_EnC)
+                                        dropout = att_dropout, encoder = None)
 
     drug_encoder = Transformer_Encoder(genes = nGenes, x_dim= nhid, y_dim = att_dim,
-                                        dropout = att_dropout, encoder = D_EnC)
+                                        dropout = att_dropout, encoder = None)
 
     encoder = Main_Encoder(cell_encoder = cell_encoder, d_dim = nhid,
                             genes=nGenes, y_dim=att_dim, dropout = att_dropout)
